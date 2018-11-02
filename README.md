@@ -4,20 +4,19 @@
 Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+(November 2, 2018)
 
 ### Student Name:  
-(First and Last Name)
+(Avery Hinchman )
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+(This assignment was built off of assignment 4 with a little more dependency on our own skills. We used if/else statements and clear functions to develop a currency calculator.)
 
 ### View Project:
-(Replace this statement with your Github Page URL that was created when you 
- published the project.)
+(https://averyhinchman.github.io/lesson5_javascript2/)
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. (If/else Statements.)
+2. (How to clear the calculator.)
+3. (Variable use among the index.html and currencyCalculator.)
 

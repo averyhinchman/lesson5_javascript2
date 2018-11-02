@@ -46,6 +46,20 @@ function calculateCurrency(){
         //USE THE TABLE PROVIDED FOR VALUES!!!
         var AUD = 1.40885; //exchange rate for Austrialian Dollar
         var AWG = 1.78511;
+        var BSD = 1.0000;
+        var XBT = 0.00015;
+        var GBP = 0.76826;
+        var CAD = 1.30976;
+        var CLP = 683.205;
+        var CNY = 6.93780;
+        var CUP = 25.0000;
+        var DKK = 6.49079;
+        var EUR = 0.87007;
+        var EGP = 17.8726;
+        var HKD = 7.83955;
+        var IRR = 42000;
+        var NGN = 361.969;
+        
 
          
          
@@ -78,7 +92,52 @@ function calculateCurrency(){
         *********************************************************************************************/
          
          //Calculate the exchange rate and set the country prefix using a selection statement
-
+        if( country == "0"){
+        exchangeRate = usdAmount * AUD;
+        countryName="AUD";
+         } else if ( country == "1"){
+        exchangeRate = usdAmount * AWG;
+        countryName="AWG"
+         } else if ( country == "2"){
+        exchangeRate = usdAmount * BSD;
+        countryName="BSD"
+         } else if ( countryName == "3"){
+         exchangeRate = usdAmount * XBT;
+         countryName="XBT"
+         } else if ( countryName == "4"){
+         exchangeRate = usdAmount * GBP;
+         countryName="GBP"
+         } else if ( countryName == "5"){
+        exchangeRate = usdAmount * CAD;
+        countryName="CAD"
+         } else if ( countryName == "6"){
+         exchangeRate = usdAmount * CLP;
+         countryName="CLP"
+         } else if ( countryName == "7"){
+         exchangeRate = usdAmount * CNY;
+         countryName="CNY"
+         } else if ( countryName == "8"){
+         exchangeRate = usdAmount * CUP;
+         countryName="CUP"
+         } else if ( countryName == "9"){
+         exchangeRate = usdAmount * DKK;
+         countryName="DKK"
+         } else if ( countryName == "10"){
+        exchangeRate = usdAmount * EUR;
+        countryName="EUR"
+         } else if ( countryName == "11"){
+         exchangeRate = usdAmount * EGP;
+         countryName="EGP"
+         } else if ( countryName == "12"){
+         exchangeRate = usdAmount * HKD;
+         countryName="HKD"
+         } else if ( countryName == "13"){
+         exchangeRate = usdAmount * IRR;
+         countryName="IRR"
+         } else if ( countryName == "14"){
+         exchangeRate = usdAmount * NGN;
+         countryName="NGN"
+         }
 
 
 
@@ -101,7 +160,7 @@ function calculateCurrency(){
          * 
          *                                INSERT YOUR CODE BELOW!
         ***********************************************************************************************/                                                                                                               
-
+        document.getElementById("currencyExchangeInfo").innerHTML = "<center> <h2> Selling $"+usdAmount + " USD ===> Buys $" +exchangeRate.toFixed(2) + " " + countryName+"</h2> </center>";
 
 
 
@@ -141,6 +200,8 @@ function clearButton () {
         *************************************************************************************************************/            
                 
         //This code resets the dropdown menu to "Australian Dollar (AUD)".
+        document.getElementById("currencyExchangeInfo").innerHTML = " ";
+        document.getElementById("usdAmount").value = " ";
        
         
         
